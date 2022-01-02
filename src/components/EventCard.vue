@@ -1,5 +1,5 @@
 <template>
-<router-link to="/events/123">
+<router-link :to="{ name: 'EventDetail', params: {id: event.id}}">
   <div class="event-card">
     <span>@{{ event.time }} on {{ event.date }}</span>
     {{ event.title }}

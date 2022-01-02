@@ -10,10 +10,10 @@
 import EventService from "@/services/EventService";
 
 export default {
+  props: ['id'],
   data() {
     return {
-      event: null,
-      id: 123,
+      event: null
     };
   },
   created() {
